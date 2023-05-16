@@ -1,0 +1,82 @@
+{
+    "dumbbells": [
+        {
+            "name": "Dumbbell Set 1",
+            "price": 50,
+            "weight": 10,
+            "image": "path/to/dumbbell1.jpg"
+        },
+        {
+            "name": "Dumbbell Set 2",
+            "price": 75,
+            "weight": 15,
+            "image": "path/to/dumbbell2.jpg"
+        },
+        {
+            "name": "Dumbbell Set 3",
+            "price": 100,
+            "weight": 20,
+            "image": "path/to/dumbbell3.jpg"
+        }
+    ],
+    "rods": [
+        {
+            "name": "Barbell Rod 1",
+            "price": 80,
+            "weight": 20,
+            "image": "path/to/rod1.jpg"
+        },
+        {
+            "name": "Barbell Rod 2",
+            "price": 100,
+            "weight": 25,
+            "image": "path/to/rod2.jpg"
+        },
+        {
+            "name": "Barbell Rod 3",
+            "price": 120,
+            "weight": 30,
+            "image": "path/to/rod3.jpg"
+        }
+    ],
+    "plates": [
+        {
+            "name": "Weight Plate 1",
+            "price": 10,
+            "weight": 5,
+            "image": "path/to/plate1.jpg"
+        },
+        {
+            "name": "Weight Plate 2",
+            "price": 15,
+            "weight": 10,
+            "image": "path/to/plate2.jpg"
+        },
+        {
+            "name": "Weight Plate 3",
+            "price": 20,
+            "weight": 15,
+            "image": "path/to/plate3.jpg"
+        }
+    ],
+    "benches": [
+        {
+            "name": "Bench 1",
+            "price": 150,
+            "features": "Adjustable incline and decline positions",
+            "image": "path/to/bench1.jpg"
+        },
+        {
+            "name": "Bench 2",
+            "price": 200,
+            "features": "Built-in leg developer and preacher curl pad",
+            "image": "path/to/bench2.jpg"
+        },
+        {
+            "name": "Bench 3",
+            "price": 250,
+            "features": "Foldable for easy storage",
+            "image": "path/to/bench3.jpg"
+        }
+    ]
+}
