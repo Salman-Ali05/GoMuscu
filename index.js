@@ -1,16 +1,19 @@
 const { MongoClient } = require("mongodb")
 const express = require('express')
-const app = express()
 let db;
+const app = express()
+app.set("view engine", "ejs");
+app.set("views", "./views");
+app.use(express.static("public"));
 
 app.get('/', async (req, res) => {
   const dumbells = await db.collection("Dumbells").find().toArray();
   console.log(dumbells);
-  res.send(`Here are the dumbells : ${dumbells.map(dumbell => dumbell.name)}`)
+  res.render("home", { dumbells });
 })
 
 app.get('/admin', (req, res) => {
-  res.send('admin')
+  res.render("admin");
 })
 
 async function start() {
@@ -21,6 +24,3 @@ async function start() {
 }
 
 start();
-
-
-//node js index.js code ?
