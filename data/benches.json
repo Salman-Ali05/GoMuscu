@@ -1,0 +1,20 @@
+[
+  {
+      "name": "Bench 1",
+      "price": 150,
+      "features": "Adjustable incline and decline positions",
+      "image": "../public/images/bench_1.jpg"
+  },
+  {
+      "name": "Bench 2",
+      "price": 200,
+      "features": "Built-in leg developer and preacher curl pad",
+      "image": "../public/images/bench_2.jpg"
+  },
+  {
+      "name": "Bench 3",
+      "price": 50,
+      "features": "Foldable for easy storage",
+      "image": "../public/images/bench_3.jpg"
+  }
+]

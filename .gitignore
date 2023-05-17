@@ -4,3 +4,4 @@ package.json
 package-lock.json
 docker-compose.yml
 webpack.config.yml
+server-compiled.js

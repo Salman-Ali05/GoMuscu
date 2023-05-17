@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Dumbells set 1",
+        "price": "10",
+        "weight": "10kg",
+        "images": "../public/images/dumbs_1.jpg"
+    },
+    {
+        "name": "Dumbells set 2",
+        "price": "20",
+        "weight": "20kg",
+        "images": "../public/images/dumbs_2.jpg"
+    },
+    {
+        "name": "Dumbells set 3",
+        "price": "30",
+        "weight": "30kg",
+        "images": "../public/images/dumbs_3.jpg"
+    }
+]

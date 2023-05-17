@@ -1,0 +1,20 @@
+[
+  {
+      "name": "Ez bar 1",
+      "price": 80,
+      "weight": 20,
+      "image": "../public/images/bar_1.jpg"
+  },
+  {
+      "name": "Ez bar 2",
+      "price": 100,
+      "weight": 25,
+      "image": "../public/images/bar_2.jpg"
+  },
+  {
+      "name": "Ez bar 3",
+      "price": 120,
+      "weight": 30,
+      "image": "../public/images/bar_3.jpg"
+  }
+]

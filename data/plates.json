@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Weight Plate 1",
+        "price": 10,
+        "weight": 5,
+        "images": "../public/images/plate_1.jpg"
+    },
+    {
+        "name": "Weight Plate 2",
+        "price": 15,
+        "weight": 10,
+        "image": "../public/images/plate_2.jpg"
+    },
+    {
+        "name": "Weight Plate 3",
+        "price": 20,
+        "weight": 15,
+        "image": "../public/images/plate_3.jpg"
+    }
+]

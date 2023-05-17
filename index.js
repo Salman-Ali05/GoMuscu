@@ -16,6 +16,10 @@ app.get('/admin', (req, res) => {
   res.render("admin");
 })
 
+app.get('/crud', (req, res) => {
+  res.render("crud");
+})
+
 async function start() {
   const client = new MongoClient("mongodb://0.0.0.0:27017/GoMuscu");
   await client.connect();
