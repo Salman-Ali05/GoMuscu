@@ -16,8 +16,8 @@ app.get('/admin', (req, res) => {
   res.render("admin");
 })
 
-app.get('/crud', (req, res) => {
-  res.render("crud");
+app.post('/admin/create', (req, res) => {
+  res.render("admin", { req });
 })
 
 async function start() {
