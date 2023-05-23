@@ -62,7 +62,7 @@ const Form = () => {
                             Name: <input type='text' value={dumbell.name} />
                             Price: <input type='number' value={dumbell.price} />
                             Weight: <input type='text' value={dumbell.weight} />
-                            Image : <img src={'../../' + dumbell.images} />
+                            Image : <img src={'' + dumbell.images} />
                             <button onClick={() => console.log(dumbell._id)}>Update</button>
                         </p>
                     </form>
