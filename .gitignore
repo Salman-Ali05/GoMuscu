@@ -6,3 +6,4 @@ docker-compose.yml
 webpack.config.yml
 server-compiled.js
 server-compiled.js
+public/main.js
