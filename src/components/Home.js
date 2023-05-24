@@ -15,13 +15,16 @@ const Home = () => {
         <div>
             <h1>Home</h1>
             {dumbells.map(dumbell => (
+
                 <div key={dumbell._id}>
-                    <p>Name: {dumbell.name}</p>
+                    <a href={'/api/admin/update/' + dumbell._id} ><p>Name: {dumbell.name}</p></a>
                     <p>Price: {dumbell.price}</p>
                     <p>Price: {dumbell.weight}</p>
                 </div>
-            ))}
-        </div>
+
+            ))
+            }
+        </div >
 
     )
 }
