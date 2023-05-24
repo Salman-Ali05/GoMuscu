@@ -25,7 +25,7 @@ const Create = () => {
     };
     return (
         <div>
-            <h1>Create form</h1>
+            <h1 className='title'>Create form</h1>
             <form onSubmit={handleSubmit}>
                 <label htmlFor="name">Name:</label>
                 <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} />

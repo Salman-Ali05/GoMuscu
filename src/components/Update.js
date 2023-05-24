@@ -54,7 +54,7 @@ const Update = () => {
 
     return (
         <div>
-            <h1>Update Dumbell</h1>
+            <h1 className='title'>Update Dumbell</h1>
             <p>Name: {dumbell.name}</p>
             <p>Price: {dumbell.price}</p>
             <p>Weight: {dumbell.weight}</p>
