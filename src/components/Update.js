@@ -33,15 +33,42 @@ const Update = () => {
         console.log(value);
     };
 
+    const handleFileChange = (event) => {
+        const file = event.target.files[0];
+        setFormData((prevFormData) => ({ ...prevFormData, images: file }));
+    };
+
     const handleUpdate = (event) => {
-        console.log("tt");
         event.preventDefault();
+
+        const requestBody = new FormData();
+
+        requestBody.append('name', formData.name);
+        requestBody.append('price', formData.price);
+        requestBody.append('weight', formData.weight);
+
+        if (formData.images) {
+            requestBody.append('images', formData.images);
+        }
+
         fetch(`http://localhost:3000/api/admin/update/${dumbell._id}`, {
             method: "POST",
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(formData)
+            body: requestBody
+        })
+            .then((response) => response.json())
+            .then((result) => {
+                if (result.redirect) {
+                    window.location.href = result.redirect;
+                    console.log(result);
+                }
+            });
+    };
+
+
+    const handleDelete = (event) => {
+        event.preventDefault();
+        fetch(`http://localhost:3000/api/admin/delete/${dumbell._id}`, {
+            method: "POST",
         })
             .then((response) => response.json())
             .then((result) => {
@@ -58,11 +85,16 @@ const Update = () => {
             <p>Name: {dumbell.name}</p>
             <p>Price: {dumbell.price}</p>
             <p>Weight: {dumbell.weight}</p>
-            <form onSubmit={handleUpdate}>
+            <img src={'/images/' + dumbell.images} alt='noImage' height="100px" width="100px" />
+            <form onSubmit={handleUpdate} encType="multipart/form-data">
                 <input type='text' name='name' value={formData.name} onChange={handleChange} />
                 <input type='number' name='price' value={formData.price} onChange={handleChange} />
                 <input type='text' name='weight' value={formData.weight} onChange={handleChange} />
+                <input type="file" id="images" name="images" onChange={handleFileChange} />
                 <button type="submit">Update</button>
+            </form>
+            <form onSubmit={handleDelete}>
+                <button type='submit' style={{ color: "red" }}>Delete</button>
             </form>
         </div>
     );

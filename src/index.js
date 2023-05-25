@@ -17,7 +17,7 @@ const App = () => {
     } else if (currentUrl.includes('/update')) {
         return (
             <div>
-                <h1>Admin Page update</h1>
+                <h1>Admin Page update + delete</h1>
                 <Update />
             </div>
         );
