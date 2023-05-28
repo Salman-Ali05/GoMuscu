@@ -25,7 +25,7 @@ const App = () => {
         // Render default content
         return (
             <div>
-                <h1>Default Page</h1>
+                {/* <h1>Default Page</h1> */}
                 <Home />
             </div>
         );

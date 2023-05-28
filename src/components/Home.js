@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import Nav from './Nav';
 
 const Home = () => {
 
@@ -13,17 +14,25 @@ const Home = () => {
 
     return (
         <div>
-            <h1>Home</h1>
+            {/* <h1>Home</h1> */}
+            <Nav />
+            <div class="Image"></div>
+        <div class="container">
+            
             {dumbells.map(dumbell => (
 
                 <div key={dumbell._id}>
-                    <a href={'/api/admin/update/' + dumbell._id} ><p>Name: {dumbell.name}</p></a>
-                    <p>Price: {dumbell.price}</p>
-                    <p>Price: {dumbell.weight}</p>
+                    <div class="container_dumbell"><a href={'/api/admin/update/' + dumbell._id} ><p>Name: {dumbell.name}</p></a>
+                        <p>Price: {dumbell.price}</p>
+                        <p>Price: {dumbell.weight}</p>
+                    </div>
+
                 </div>
+           
 
             ))
             }
+               </div>
         </div >
 
     )
