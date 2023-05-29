@@ -88,8 +88,12 @@ nav a {
 
 /*******DUMBELL********/
 
-h3{
-    text-align : left;
+.contain_title{
+    background-color:#180b4b;
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-top:5vh;
 }
 
 .container_item {

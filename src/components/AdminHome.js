@@ -44,47 +44,43 @@ const AdminHome = () => {
             <NavAdmin />
             <div className="Image"></div>
             <div className="container">
-                <h3>Dumbells :</h3>
-                {dumbells.map(dumbell => (
-                    <div key={dumbell._id}>
-                        <a href={'/api/admin/updateDumbell/' + dumbell._id} className='item'>
-                            <div className="container_item"><p>Name: {dumbell.name}</p>
-                                <p>Price: {dumbell.price}</p>
-                                <p>Weight: {dumbell.weight}</p>
-                            </div>
-                        </a>
-                    </div>
+            
+            <div class="contain_title"><h3>Dumbells :</h3></div>
+                <div class="container_dumbells">
+                    {dumbells.map(dumbell => (
+                        <div key={dumbell._id}>
+                            <a href={'/api/admin/updateDumbell/' + dumbell._id} className='item'>
+                                <div className="container_item"><p>Name: {dumbell.name}</p>
+                                    <p>Price: {dumbell.price}</p>
+                                    <p>Weight: {dumbell.weight}</p>
+                                </div>
+                            </a>
+                        </div>
 
-                ))
+                    ))
+                    }
+                </div>
+
+                <div class="contain_title"><h3>Benches :</h3></div>
+                    <div class="container_benches">
+                    {benches.map(bench => (
+                        <div key={bench._id}>
+                            <a href={'/api/admin/updateBench/' + bench._id} className='item'>
+                                <div className="container_item"><p>Name: {bench.name}</p>
+                                    <p>Price: {bench.price}</p>
+                                    <p>Features: {bench.features}</p>
+                                </div>
+                            </a>
+                        </div>
+
+                    ))
                 }
+                </div>
+                    
+                
 
-                <h3>Benches :</h3>
-                {benches.map(bench => (
-                    <div key={bench._id}>
-                        <a href={'/api/admin/updateBench/' + bench._id} className='item'>
-                            <div className="container_item"><p>Name: {bench.name}</p>
-                                <p>Price: {bench.price}</p>
-                                <p>Features: {bench.features}</p>
-                            </div>
-                        </a>
-                    </div>
-
-                ))
-                }
-                <h3>Plates :</h3>
-                {plates.map(plate => (
-                    <div key={plate._id}>
-                        <a href={'/api/admin/updatePlate/' + plate._id} className='item'>
-                            <div className="container_item"><p>Name: {plate.name}</p>
-                                <p>Price: {plate.price}</p>
-                                <p>Weight: {plate.weight}</p>
-                            </div>
-                        </a>
-                    </div>
-
-                ))
-                }
-                <h3>Rods :</h3>
+                <div class="contain_title"><h3>Rods :</h3></div>
+                <div class="container_rods">
                 {rods.map(rod => (
                     <div key={rod._id}>
                         <a href={'/api/admin/updateRod/' + rod._id} className='item'>
@@ -99,6 +95,7 @@ const AdminHome = () => {
                 }
             </div>
         </div >
+    </div>
 
     )
 }

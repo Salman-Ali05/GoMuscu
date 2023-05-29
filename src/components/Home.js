@@ -44,12 +44,12 @@ const Home = () => {
             <Nav />
             <div className="Image"></div>
             <div className="container">
-                <h3>Dumbells :</h3>
+            <div class="contain_title"><h3>Dumbells :</h3></div>
                 <div class="container_dumbells">
                     
                     {dumbells.map(dumbell => (
                         <div key={dumbell._id}>
-                            <a href={'/client/dumbell/' + dumbell._id}><div className="container_item"><p>Name: {dumbell.name}</p>
+                            <a href={'/client/dumbell/' + dumbell._id}><div className="container_item container_dumbells_item"><p>Name: {dumbell.name}</p>
                                 <p>Price: {dumbell.price}</p>
                                 <p>Weight: {dumbell.weight}</p>
                             </div>
@@ -61,7 +61,7 @@ const Home = () => {
                     }
                 </div>
 
-                <h3>Benches :</h3>
+                <div class="contain_title"><h3>Benches :</h3></div>
                 <div class="container_benches">
                     {benches.map(bench => (
                         <div key={bench._id}>
@@ -76,7 +76,7 @@ const Home = () => {
                     }
                 </div>
 
-                <h3>Rods :</h3>
+                <div class="contain_title"><h3>Rods :</h3></div>
                 <div class="container_rods">
                     {rods.map(rod => (
                         <div key={rod._id}>
