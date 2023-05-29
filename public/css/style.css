@@ -1,0 +1,79 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FBFCFC;
+}
+
+
+/*******NAVBAR********/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color:#A93226;
+    color:white; 
+}
+
+nav a{
+    text-decoration:none;
+    color: white;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.nav-left{
+    margin-left: 2%;
+}
+
+.nav--items{
+    padding-right: 3vh;
+}
+
+
+.Image{
+    
+    height:75vh;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-image: url('../Images/background.jpg');
+   
+}
+
+
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/*******DUMBELL********/
+
+
+
+.container_dumbell{
+    background-color: #F2F3F4;
+    height: 25vh;
+    width: 25vh;
+    border: 1px solid #808B96;
+    border-radius: 0.5rem;
+    box-shadow: 1px 1px 1px #566573;
+    margin-top: 4vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 10%;
+}
+
+.container_dumbell a {
+    text-decoration: none;
+    color: black;
+}
