@@ -103,9 +103,6 @@ nav a {
 .item {
     text-decoration: none;
     color: black;
-<<<<<<< HEAD
-    
-=======
 }
 
 .itemInfo {
@@ -223,5 +220,4 @@ nav a {
     color: black;
     font-size: 30px;
     font-weight: bold;
->>>>>>> 927fbd3c6b93a065ce63f3df7a0ac3a7bad04509
 }
