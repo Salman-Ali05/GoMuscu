@@ -16,7 +16,13 @@ const Home = () => {
         <div>
             {/* <h1>Home</h1> */}
             <Nav />
-            <div class="Image"></div>
+            <div class="Image">
+                <div class="text">
+                    <h2>BUILD</h2>
+                    <p>YOUR BODY - TRANSFORM YOUR</p>
+                    <p>LIFE </p>
+                </div>
+            </div>
         <div class="container">
             
             {dumbells.map(dumbell => (
@@ -26,7 +32,6 @@ const Home = () => {
                         <p>Price: {dumbell.price}</p>
                         <p>Price: {dumbell.weight}</p>
                     </div>
-
                 </div>
            
 

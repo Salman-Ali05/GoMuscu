@@ -57,6 +57,20 @@ nav a{
     margin-top: 1%;
     
 }
+
+.Image{
+    display: flex;
+    align-items: center;
+}
+
+.text{
+    height: 40vh;
+    width: 70vh;
+    margin-left: 20vh;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
 /*******DUMBELL********/
 
 
@@ -74,10 +88,11 @@ nav a{
     flex-wrap: nowrap;
     justify-content: center;
     align-items: flex-start;
-    padding: 10%;
+    text-align: center;
 }
 
 .container_dumbell a {
     text-decoration: none;
     color: black;
+    
 }
