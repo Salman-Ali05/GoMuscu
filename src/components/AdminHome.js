@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
-import Nav from './Nav';
+import NavAdmin from './NavAdmin';
 
-const Home = () => {
+const AdminHome = () => {
 
     const [dumbells, setDumbells] = useState([]);
 
@@ -41,56 +41,60 @@ const Home = () => {
 
     return (
         <div>
-            <Nav />
+            <NavAdmin />
             <div className="Image"></div>
             <div className="container">
                 <h3>Dumbells :</h3>
                 {dumbells.map(dumbell => (
                     <div key={dumbell._id}>
-                        <a href={'/client/dumbell/' + dumbell._id} className='item'><div className="container_item"><p>Name: {dumbell.name}</p>
-                            <p>Price: {dumbell.price}</p>
-                            <p>Weight: {dumbell.weight}</p>
-                        </div>
+                        <a href={'/api/admin/updateDumbell/' + dumbell._id} className='item'>
+                            <div className="container_item"><p>Name: {dumbell.name}</p>
+                                <p>Price: {dumbell.price}</p>
+                                <p>Weight: {dumbell.weight}</p>
+                            </div>
                         </a>
-
                     </div>
 
                 ))
                 }
+
                 <h3>Benches :</h3>
                 {benches.map(bench => (
                     <div key={bench._id}>
-                        <a href={'/client/bench/' + bench._id} className='item'><div className="container_item"><p>Name: {bench.name}</p>
-                            <p>Price: {bench.price}</p>
-                            <p>Features: {bench.features}</p>
-                        </div>
+                        <a href={'/api/admin/updateBench/' + bench._id} className='item'>
+                            <div className="container_item"><p>Name: {bench.name}</p>
+                                <p>Price: {bench.price}</p>
+                                <p>Features: {bench.features}</p>
+                            </div>
                         </a>
-
                     </div>
-                ))
-                }
-                <h3>Rods :</h3>
-                {rods.map(rod => (
-                    <div key={rod._id}>
-                        <a href={'/client/rod/' + rod._id} className='item'><div className="container_item"><p>Name: {rod.name}</p>
-                            <p>Price: {rod.price}</p>
-                            <p>Weight: {rod.weight}</p>
-                        </div>
-                        </a>
 
-                    </div>
                 ))
                 }
                 <h3>Plates :</h3>
                 {plates.map(plate => (
                     <div key={plate._id}>
-                        <a href={'/client/plate/' + plate._id} className='item'><div className="container_item"><p>Name: {plate.name}</p>
-                            <p>Price: {plate.price}</p>
-                            <p>Weight: {plate.weight}</p>
-                        </div>
+                        <a href={'/api/admin/updatePlate/' + plate._id} className='item'>
+                            <div className="container_item"><p>Name: {plate.name}</p>
+                                <p>Price: {plate.price}</p>
+                                <p>Weight: {plate.weight}</p>
+                            </div>
                         </a>
-
                     </div>
+
+                ))
+                }
+                <h3>Rods :</h3>
+                {rods.map(rod => (
+                    <div key={rod._id}>
+                        <a href={'/api/admin/updateRod/' + rod._id} className='item'>
+                            <div className="container_item"><p>Name: {rod.name}</p>
+                                <p>Price: {rod.price}</p>
+                                <p>Weight: {rod.weight}</p>
+                            </div>
+                        </a>
+                    </div>
+
                 ))
                 }
             </div>
@@ -99,4 +103,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default AdminHome
