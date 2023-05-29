@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap');
+
 body{
     margin: 0;
     padding: 0;
     background-color: #FBFCFC;
+    font-family: 'Raleway', sans-serif;
 }
-
 
 /*******NAVBAR********/
 nav {
@@ -52,6 +54,8 @@ nav a{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    margin-top: 1%;
+    
 }
 /*******DUMBELL********/
 
