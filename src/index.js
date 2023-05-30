@@ -81,7 +81,6 @@ const App = () => {
     if (currentUrl.includes('/user/connect')) {
         return (
             <div>
-                <h1>Connection page</h1>
                 <Connection />
             </div>
         );

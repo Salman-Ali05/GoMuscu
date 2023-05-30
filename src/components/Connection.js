@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Nav from './Nav';
 
 const Connection = () => {
     const [formData, setFormData] = useState({
@@ -37,17 +38,19 @@ const Connection = () => {
 
     return (
         <div>
-            <h1>Connection</h1>
+            <Nav />
+            <h1 className='titles'>Connection</h1>
+            <div className='container'>
+                <form onSubmit={handleSubmit}>
+                    <label htmlFor="name">Name:</label>
+                    <input type="text" id="name" className='inputs' name="idd" placeholder="Idd" value={formData.name} onChange={handleChange} />
 
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="name">Name:</label>
-                <input type="text" id="name" name="idd" placeholder="idd" value={formData.name} onChange={handleChange} />
+                    <label htmlFor="pass">Pass:</label>
+                    <input type="password" id="pass" className='inputs' name="pass" placeholder="Pass" value={formData.pass} onChange={handleChange} />
 
-                <label htmlFor="pass">Pass:</label>
-                <input type="password" id="pass" name="pass" placeholder="pass" value={formData.pass} onChange={handleChange} />
-
-                <input type="submit" value="Connect" />
-            </form>
+                    <input type="submit" value="Connect" className='submit' />
+                </form>
+            </div>
         </div>
     );
 };
